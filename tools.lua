@@ -1,6 +1,7 @@
 -- Dev: Mike016
 -- Date: Saturday , June 15,2024
 --[[
+   -- Tools are objects that a Humanoid object can equip
    -- need to set part name = "Handle" --> for appearing in hand of player
    -- click Backspace for droped tool 
 ]]--
