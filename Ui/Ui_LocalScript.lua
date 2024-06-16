@@ -2,13 +2,13 @@
 -- Date: Sunday, June 16,2024
 --[[
 Structure of folder and files is as follows:
-												- **StarterGui**
-												  - **ScreenGui**
-												    - **LocalScript**
-												    - **Frame**
-												      - **yesButton**
-												      - **noButton**
-												      - **TextLabel**
+					- **StarterGui**
+					  - **ScreenGui**
+					    - **LocalScript**
+					    - **Frame**
+					      - **yesButton**
+					      - **noButton**
+					      - **TextLabel**
 
 ]]--
 
