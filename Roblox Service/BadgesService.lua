@@ -5,7 +5,7 @@
 BAGES: A special award you can gift players when they meet a goal within your experience, 
        such as completing a difficult objective or playing for a certain amount of time.
        As soon as a player receives a badge,it displays within the Badges category of their inventory.
-       *** Use a template of 512×512 pixels.
+       *** Use a template of 512Ã—512 pixels.
  3 Useful method:
   - Awarding Badges: --> BadgeService:AwardBadge(player.UserId, badgeId)
   - Checking Earned Badges: --> BadgeService:UserHasBadgeAsync(player.UserId, BADGE_ID) => boolean
@@ -29,7 +29,10 @@ game.Players.PlayerAdded:Connect(function(player)
 	if not hasBadge and badgeInfo.IsEnabled then
 		-- If player doesn't have this badge AND badge is enabled(Actived),
 		-- Then award the player this badge.
-	    local sucess , errorMsg = pcall(BadgeService.AwardBadge , BadgeService , player.UserId , BADGE_ID)
+	    local success , errorMsg = pcall(BadgeService.AwardBadge , BadgeService , player.UserId , BADGE_ID)
+	    if not success then
+	       print(errorMsg)
+	    end
 	else
 		print(player.Name .. " already has bage!")
 	end
