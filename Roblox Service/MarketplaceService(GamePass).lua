@@ -2,7 +2,7 @@
 -- Date: Monday, July 8, 2024
 
 -- Game Passes allow you to charge a one-time Robux fee.
--- Cover photo for game pass: 512×512 pixels in .jpg, .png, or .bmp format.
+-- Cover photo for game pass: 512Ã—512 pixels in .jpg, .png, or .bmp format.
 -- By default, in dev mode, the game pass is already added to our inventory.
 -- If we want to test buying it, we need to remove it from the inventory first(roblox.com).
 
@@ -151,5 +151,6 @@ SignalPromptProductPurchaseFinished
 SignalPromptPurchaseFinished 
 SignalPromptSubscriptionPurchaseFinished 
 SignalPromptSubscriptionCancellationFinished
+ref: https://devforum.roblox.com/t/promptproductpurchasefinished-vulnerability-fix/2943231
 ]]
 
